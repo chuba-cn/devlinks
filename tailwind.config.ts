@@ -1,13 +1,14 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -18,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -31,6 +35,26 @@ const config = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+        },
+        hover: {
+          DEFAULT: "hsl(var(--hover))",
+          foreground: "hsl(var(--hover-foreground))",
+        },
+        darkgrey: {
+          DEFAULT: "hsl(var(--dark-grey))",
+          foreground: "hsl(var(--dark-grey-foreground))",
+        },
+        grey: {
+          DEFAULT: "hsl(var(--grey))",
+          foreground: "hsl(var(--grey-foreground))",
+        },
+        whitegrey: {
+          DEFAULT: "hsl(var(--white-grey))",
+          foreground: "hsl(var(--dark-white-foreground))",
+        },
+        lightgrey: {
+          DEFAULT: "hsl(var(--light-grey))",
+          foreground: "hsl(var(--dark-light-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -75,6 +99,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
