@@ -28,7 +28,7 @@ const VerificationEmail: React.FC<VerificationEmailProps> = ({
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>
-            <Heading style={headerTitle}>Welcome to Our Devlinks</Heading>
+            <Heading style={headerTitle}>Welcome to Devlinks</Heading>
           </Section>
           <Hr style={divider} />
           <Section style={content}>

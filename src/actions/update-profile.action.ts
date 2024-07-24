@@ -159,7 +159,7 @@ export const handleImageUpload = async (
         "Content-type": file.type,
         "Access-Control-Allow-Origin":
           process.env.NODE_ENV === "production"
-            ? "https://link-sharing-app-sigma-mauve.vercel.app/"
+            ? "https://devlinks-theta-six.vercel.app/"
             : "http://localhost:3000",
       },
     });
