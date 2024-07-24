@@ -11,9 +11,9 @@ export default auth(async (req) => {
   const isProtected = protectedRoutes.includes(nextUrl.pathname);
   const unAuthorized = !isLoggedIn && isProtected;
 
-  // Redirect user to the links page if user is authenticated and if the current pathname is '/login' or '/register' route
+  // Redirect user to the home page if user is authenticated and if the current pathname is '/login' or '/register' route.
   if (isLoggedIn && ["/login", "/register"].includes(nextUrl.pathname)) {
-    return Response.redirect(new URL("/links", nextUrl));
+    return Response.redirect(new URL("/", nextUrl));
   }
 
   // Redirect user to the login page if they are not authorized
