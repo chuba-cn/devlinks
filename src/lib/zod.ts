@@ -1,3 +1,4 @@
+import { linkFormState } from "@/types/form-states";
 import { structureType, structureTypeArray } from "@/types/response";
 import { ZodEffects, ZodString, object, string } from "zod";
 import { urlValidator } from "./data";

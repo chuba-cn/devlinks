@@ -25,7 +25,7 @@ async function ProfilePage() {
       <div className="hidden sm:block bg-primary w-screen h-[300px] rounded-b-3xl sm:px-4">
         <nav className="flex w-full items-center justify-between py-4 px-6 z-30 sm:bg-white sm:mt-4 rounded-2xl">
           <Link
-            href={"/links"}
+            href={"/"}
             className="border border-primary rounded-md py-2 text-md font-semibold text-sm text-primary hover:bg-hover-foreground/50 px-4"
           >
             Back to Editor

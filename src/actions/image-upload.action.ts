@@ -1,4 +1,5 @@
-// 'use server';
+'use server'
+
 import { auth } from "@/auth";
 import { S3 } from "@/storage/s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";

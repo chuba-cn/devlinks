@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Devlinks",
   description:
     "Simple and efficient way for developers to share all their links",
-  icons: "./devlinks-icon.png",
+  icons: "/assets/images/devlinks-icon.png",
 };
 
 export default async function RootLayout({

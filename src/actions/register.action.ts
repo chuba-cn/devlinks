@@ -1,4 +1,4 @@
-'use server'
+"use server"
 
 import { db } from "@/db";
 import { sendVerificationEmail } from "@/lib/sendEmail";
@@ -31,7 +31,7 @@ export const register = async (
     },
   });
 
-  //If email already exists but user is not verified,send user verification code and verify their email
+  // If email already exists but user is not verified,send user verification code and verify their email
   if (existingEmail && !existingEmail.emailVerified) {
     const token = await generateVerificationCode(email);
 
@@ -45,6 +45,7 @@ export const register = async (
   }
 
   if (existingEmail) {
+
     return {
       errors: {
         _form: ["Email already exists!"],
@@ -78,6 +79,7 @@ export const register = async (
     };
   }
 
+  //Just to easy registration I comment out the email verification feature
 
   const token = await generateVerificationCode(email);
 
@@ -85,6 +87,7 @@ export const register = async (
 
   await sendVerificationEmail({ to: result.data.email, verificationUrl });
 
+  // await sendVerificationEmail(email, token);
 
   return {
     errors: {

@@ -1,4 +1,4 @@
-"use server";
+"use server"
 
 import { signIn } from "@/auth";
 import { sendVerificationEmail } from "@/lib/sendEmail";
@@ -12,7 +12,6 @@ export const handleLogin = async (
   formState: loginFormState,
   formData: FormData
 ): Promise<loginFormState> => {
-  // Validate form data
   const result = signInSchema.safeParse({
     email: formData.get("email"),
     password: formData.get("password"),
@@ -20,7 +19,6 @@ export const handleLogin = async (
 
   if (!result.success) {
     console.log(result.error.issues);
-
     return {
       errors: result.error.flatten().fieldErrors,
     };
@@ -30,7 +28,7 @@ export const handleLogin = async (
 
   if (!user) {
     return {
-      errors: { _form: ["Login failed: No User Found!"] },
+      errors: { _form: ["Login failed! No user found with these credentials"] },
     };
   }
 
@@ -42,11 +40,7 @@ export const handleLogin = async (
     await sendVerificationEmail({ to: result.data.email, verificationUrl });
 
     return {
-      errors: {
-        _form: [
-          "Login failed! Verify your email first. A verification code has been sent to your mailbox.",
-        ],
-      },
+      errors: { _form: ["Login failed! Verify your email first. A verification code has been sent to your mailbox."] },
     };
   }
 
@@ -55,14 +49,14 @@ export const handleLogin = async (
   if (!success) {
     return {
       errors: {
-        _form: ["Login failed! Invalid credentials."],
+        _form: ["Login failed! Invalid credentials"],
       },
     };
   }
 
   await signIn("credentials", {
     email: result.data.email,
-    redirectTo: "/",
+    redirectTo: "/links",
   });
 
   return { errors: {} };

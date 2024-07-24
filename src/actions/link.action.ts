@@ -1,8 +1,9 @@
-"use server";
+'use server'
 
 import { auth } from "@/auth";
 import { db } from "@/db";
 import { getId, saveLinksSchema } from "@/lib/zod";
+import { linkFormState } from "@/types/form-states";
 import { structureType, structureTypeArray } from "@/types/response";
 import { revalidatePath } from "next/cache";
 
@@ -32,7 +33,7 @@ export const saveLinks = async (
         const key = parseInt(Object.keys(row)[0]);
         const platform = row[key].platform as string;
 
-        // Ensure valid user object
+        // Make sure user object is valid
         if (!user || !user.id) {
           throw new Error("User is not defined or user ID is missing");
         }
@@ -92,7 +93,7 @@ function getStructuredData(data: { [x: string]: string }) {
   let length = keys.length;
 
   const structuredData = keys.reduce((acc, key) => {
-    //push the individual fields to the row object
+    //push individual fields to  row obj
     if (count === 1) {
       id = parseInt(getId(key));
       if (key.endsWith("url")) {
@@ -146,11 +147,11 @@ function getStructuredData(data: { [x: string]: string }) {
 
     if (count % 3 === 0) {
       const temp = row;
-      //reset row array
+      //reset row arr
       row = {};
-      //reset count variable
+      //reset count
       count = 1;
-      //return acc with row
+      //return acc with row`
       return [...acc, temp];
     }
 
@@ -164,7 +165,7 @@ function getStructuredData(data: { [x: string]: string }) {
 
 export const deleteLinks = async (trashItems: string[]) => {
   try {
-    // Attempt deleting the links with IDs in the trashItems array
+    // Attempt to delete the links with IDs in the trashItems array
     await db.link.deleteMany({
       where: {
         id: {
@@ -176,10 +177,10 @@ export const deleteLinks = async (trashItems: string[]) => {
       `Successfully deleted links with IDs: ${trashItems.join(", ")}`
     );
   } catch (error) {
-    // Log any errors that may occur during deletion
+    // Log any errors that occur during the deletion process
     console.error("Error deleting links:", error);
   } finally {
-    // Revalidate the path to ensure the UI reflects the delete action
+    // Revalidate the path to ensure the UI reflects the deletion
     revalidatePath("/links");
   }
 };

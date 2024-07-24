@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import PhoneMockUp from "../svg/PhoneMockUp";
 import { Input } from "../ui/input";
@@ -109,7 +109,7 @@ function ProfileMain({
               }
 
               const response = await updateProfile(formData);
-              if (response) {
+              if(response) {
                 setPending(false);
               }
               setState(response);

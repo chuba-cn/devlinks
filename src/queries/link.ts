@@ -35,9 +35,7 @@ export const getLinks = async () => {
       },
       url: link.url,
     };
-
     y = y + 64;
-
     return linkData;
   });
 

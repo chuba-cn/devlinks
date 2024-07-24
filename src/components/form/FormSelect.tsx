@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import { link } from "@/components/link/LinkMain";
 import React, {
@@ -19,9 +19,9 @@ function FormSelect({
   link,
   platform,
 }: {
-  trash: link[] | null;
   errors: string | undefined;
   link: link;
+  trash: link[] | null;
   setNewLinks: Dispatch<SetStateAction<link[] | null>>;
   newLinks: link[] | null;
   id: number;
@@ -139,4 +139,4 @@ function FormSelect({
   );
 }
 
-export default FormSelect
+export default FormSelect;
