@@ -36,7 +36,7 @@ async function ProfilePage() {
           />
         </nav>
       </div>
-      <section className="flex flex-col gap-4 justify-center items-center mt-12 sm:rounded-2xl sm:top-40 sm:left-[50%] sm:right-[50%] sm:-translate-x-[50%] sm:w-fit sm:z-50 sm:bg-white sm:absolute sm:px-12 sm:py-12">
+      <section className="flex flex-col gap-4 justify-center items-center mt-12 sm:rounded-2xl sm:top-40 sm:left-[50%] sm:right-[50%] sm:-translate-x-[50%] sm:w-fit sm:z-50 sm:bg-white sm:absolute sm:px-12 sm:py-12 shadow-md">
         {user?.image ? (
           <Image
             width={104}

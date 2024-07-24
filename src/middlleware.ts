@@ -1,9 +1,10 @@
 import NextAuth from "next-auth";
 import authConfig from "./auth.config";
+import { NextResponse } from "next/server";
 
 export const { auth } = NextAuth(authConfig);
 
-const protectedRoutes = ["/", "/links", "/profile", "/preview"];
+const protectedRoutes = ["/", "/profile", "/preview"];
 
 export default auth(async (req) => {
   const nextUrl = req.nextUrl;
@@ -13,12 +14,12 @@ export default auth(async (req) => {
 
   // Redirect user to the home page if user is authenticated and if the current pathname is '/login' or '/register' route.
   if (isLoggedIn && ["/login", "/register"].includes(nextUrl.pathname)) {
-    return Response.redirect(new URL("/", nextUrl));
+    return NextResponse.redirect(new URL("/", nextUrl));
   }
 
   // Redirect user to the login page if they are not authorized
   if (unAuthorized) {
-    return Response.redirect(new URL("/login", nextUrl));
+    return NextResponse.redirect(new URL("/login", nextUrl));
   }
 });
 

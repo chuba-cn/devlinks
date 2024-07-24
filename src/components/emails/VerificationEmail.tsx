@@ -52,7 +52,7 @@ const VerificationEmail: React.FC<VerificationEmailProps> = ({
           <Section style={footer}>
             <Text style={footerText}>
               If you have any questions, feel free to{" "}
-              <Link href="mailto:shinekoko1276@gmail.com">contact us</Link>.
+              <Link href="mailto:chinemelumchubanwene57@gmail.com">contact us</Link>.
             </Text>
             <Text style={footerText}>
               © 2024 Our Service. All rights reserved.

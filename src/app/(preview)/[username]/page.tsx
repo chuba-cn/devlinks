@@ -59,8 +59,8 @@ async function ViewPage({ params }: { params: { username: string } }) {
           </div>
         </section>
       ) : (
-        <section className="flex items-center justify-center h-screen">
-          <div className="max-w-md p-8 bg-white rounded-lg shadow-lg">
+        <section className="flex items-center justify-center h-screen ">
+          <div className="max-w-md p-2 bg-white rounded-lg shadow-lg mt-12 sm:rounded-2xl sm:top-40 sm:left-[50%] sm:right-[50%] sm:-translate-x-[50%] sm:w-96 sm:absolute sm:px-10 sm:py-12">
             <div className="text-center">
               <h1 className="text-4xl font-bold text-gray-800">
                 User Not Found

@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "devlink.s3.ap-southeast-1.amazonaws.com",
+        hostname: "devlinks-web-storage.s3.eu-north-1.amazonaws.com",
         port: "",
         pathname: "**",
       },

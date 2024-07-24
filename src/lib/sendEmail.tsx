@@ -9,7 +9,7 @@ interface SendVerificationEmailProps {
 
 export async function sendVerificationEmail({ to, verificationUrl }: SendVerificationEmailProps) {
   const transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'gmail',
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,

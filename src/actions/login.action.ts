@@ -62,7 +62,7 @@ export const handleLogin = async (
 
   await signIn("credentials", {
     email: result.data.email,
-    redirectTo: "/links",
+    redirectTo: "/",
   });
 
   return { errors: {} };
