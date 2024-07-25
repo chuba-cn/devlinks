@@ -32,3 +32,4 @@ export async function sendVerificationEmail({ to, verificationUrl }: SendVerific
     console.log(error)
   }
 }
+

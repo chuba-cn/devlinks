@@ -37,7 +37,7 @@ export const platform = [
       <IconGithub color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://github.com/maungshine",
+    egLink: "https://github.com/chuba",
     brandColor: "#1A1A1A",
     mockUpIcon: <IconGithub color="fill-white" />,
     coordinates: {
@@ -51,7 +51,7 @@ export const platform = [
       <IconFrontendMentor color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://www.frontendmentor.io/profile/maungshine",
+    egLink: "https://www.frontendmentor.io/profile/chuba",
     brandColor: "#6abecd",
     mockUpIcon: <IconFrontendMentor color="fill-white" />,
     coordinates: {
@@ -65,7 +65,7 @@ export const platform = [
       <IconTwitter color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://.x.com/maungshine",
+    egLink: "https://.x.com/chuba",
     brandColor: "#1da1f2",
     mockUpIcon: <IconTwitter color="fill-white" />,
     coordinates: {
@@ -79,7 +79,7 @@ export const platform = [
       <IconTwitch color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://www.twitch.com/maungshine",
+    egLink: "https://www.twitch.com/chuba",
     brandColor: "#8b44f7",
     mockUpIcon: <IconTwitch color="fill-white" />,
     coordinates: {
@@ -93,7 +93,7 @@ export const platform = [
       <IconDevto color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://www.dev.to/maungshine",
+    egLink: "https://www.dev.to/chuba",
     brandColor: "#000000",
     mockUpIcon: <IconDevto color="fill-black" />,
     coordinates: {
@@ -107,7 +107,7 @@ export const platform = [
       <IconCodePen color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://www.codepen.io/maungshine",
+    egLink: "https://www.codepen.io/chuba",
     brandColor: "#010101",
     mockUpIcon: <IconCodePen color="fill-white" />,
     coordinates: {
@@ -121,7 +121,7 @@ export const platform = [
       <IconCodeWars color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://www.codewars.com/users/ab12",
+    egLink: "https://www.codewars.com/users/chuba12",
     brandColor: "#fe5252",
     mockUpIcon: <IconCodeWars color="fill-white" />,
     coordinates: {
@@ -135,7 +135,7 @@ export const platform = [
       <IconGitlab color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://gitlab.com/maungshine",
+    egLink: "https://gitlab.com/chuba",
     brandColor: "#e24329",
     mockUpIcon: <IconGitlab color="fill-white" />,
     coordinates: {
@@ -149,7 +149,7 @@ export const platform = [
       <IconFacebook color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://facebook.com/maungshine",
+    egLink: "https://facebook.com/chuba",
     brandColor: "#0c87ef",
     mockUpIcon: <IconFacebook color="fill-white" />,
     coordinates: {
@@ -163,7 +163,7 @@ export const platform = [
       <IconFreeCodeCamp color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://freecodecamp.org/maungshine",
+    egLink: "https://freecodecamp.org/chuba",
     brandColor: "#0a0a23",
     mockUpIcon: <IconFreeCodeCamp color="fill-white" />,
     coordinates: {
@@ -177,7 +177,7 @@ export const platform = [
       <IconHashnode color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://hashnode.com/@maungshine",
+    egLink: "https://hashnode.com/@chuba",
     brandColor: "#2962FF",
     mockUpIcon: <IconHashnode color="fill-white" />,
     coordinates: {
@@ -191,7 +191,7 @@ export const platform = [
       <IconLinkedin color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://linkedin.com/in/maungshine",
+    egLink: "https://linkedin.com/in/chuba",
     brandColor: "#0a66c2",
     mockUpIcon: <IconLinkedin color="fill-white" />,
     coordinates: {
@@ -205,7 +205,7 @@ export const platform = [
       <IconStackoverflow color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://stackoverflow.com/users/123456/maungshine",
+    egLink: "https://stackoverflow.com/users/123456/chuba",
     brandColor: "#f5903f",
     mockUpIcon: <IconStackoverflow color="fill-white" />,
     coordinates: {
@@ -219,7 +219,7 @@ export const platform = [
       <IconYoutube color="absolute top-[50%] bottom-[50%] -translate-y-[50%]" />
     ),
     priority: 0,
-    egLink: "https://www.youtube.com/@devmaungshine",
+    egLink: "https://www.youtube.com/@devchuba",
     brandColor: "#ff0000",
     mockUpIcon: <IconYoutube color="fill-white" />,
     coordinates: {
